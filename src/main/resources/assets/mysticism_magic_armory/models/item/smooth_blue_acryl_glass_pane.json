@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mysticism_magic_armory:block/blue_acryl_glass_smooth"
+  },
+  "render_type": "minecraft:translucent"
+}

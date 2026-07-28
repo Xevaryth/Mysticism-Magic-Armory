@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "mysticism_magic_armory:purple_acryl_block"
+  },
+  "result": {
+    "id": "mysticism_magic_armory:purple_acryl_slab",
+    "count": 2
+  },
+  "group": "acryl_slabs"
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mysticism_magic_armory:block/red_acryl_glass_chiseled"
+  }
+}

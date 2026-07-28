@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "mysticism_magic_armory:block/green_acryl_bricks"
+  }
+}

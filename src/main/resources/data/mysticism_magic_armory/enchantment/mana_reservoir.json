@@ -1,0 +1,35 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "enchantment.mysticism_magic_armory.mana_reservoir"
+  },
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 20.0,
+          "per_level_above_first": 20.0
+        },
+        "attribute": "mysticism:max_mana",
+        "id": "mysticism_magic_armory:enchantment.mana_reservoir",
+        "operation": "add_value"
+      }
+    ]
+  },
+  "exclusive_set": "#mysticism_magic_armory:exclusive_set/mana_reservoir",
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 10
+  },
+  "max_level": 4,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 10
+  },
+  "slots": [
+    "head"
+  ],
+  "supported_items": "#minecraft:enchantable/head_armor",
+  "weight": 2
+}

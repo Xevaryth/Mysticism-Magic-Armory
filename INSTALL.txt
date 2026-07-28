@@ -1,0 +1,17 @@
+MYSTICISM: MAGIC ARMORY 0.16.0
+
+This is a clean replacement project for NeoForge 1.21.1.
+
+Recommended:
+1. Close the running client and any IntelliJ Gradle tasks.
+2. Extract this ZIP to a new folder.
+3. Open the folder containing settings.gradle in IntelliJ.
+4. Use Java 21.
+5. Delete the old generated config when replacing an earlier build:
+      Remove-Item ".\run\config\mysticism_magic_armory-common.toml" -ErrorAction SilentlyContinue
+6. Run:
+      .\gradlew.bat clean runClient
+
+The Acryl rewrite removes the old Veilsteel, Resonite, Riftrose, wand,
+custom bow/crossbow, Runed Flint, Runed Leather, and Mana Quiver registrations.
+Back up worlds before opening them with the replacement build.

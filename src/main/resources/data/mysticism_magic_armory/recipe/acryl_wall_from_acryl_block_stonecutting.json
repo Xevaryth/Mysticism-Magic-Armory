@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "mysticism_magic_armory:acryl_block"
+  },
+  "result": {
+    "id": "mysticism_magic_armory:acryl_wall",
+    "count": 1
+  },
+  "group": "acryl_walls"
+}

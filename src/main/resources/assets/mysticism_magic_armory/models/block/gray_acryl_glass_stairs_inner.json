@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "mysticism_magic_armory:block/gray_acryl_glass_block",
+    "top": "mysticism_magic_armory:block/gray_acryl_glass_block",
+    "side": "mysticism_magic_armory:block/gray_acryl_glass_block"
+  },
+  "render_type": "minecraft:translucent"
+}

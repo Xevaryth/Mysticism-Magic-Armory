@@ -1,0 +1,18 @@
+{
+  "sources": [
+    {
+      "type": "paletted_permutations",
+      "textures": [
+        "minecraft:trims/items/leggings_trim",
+        "minecraft:trims/items/chestplate_trim",
+        "minecraft:trims/items/helmet_trim",
+        "minecraft:trims/items/boots_trim"
+      ],
+      "palette_key": "minecraft:trims/color_palettes/trim_palette",
+      "permutations": {
+        "magic_armory_acryl": "mysticism_magic_armory:trims/color_palettes/acryl",
+        "magic_armory_acryl_darker": "mysticism_magic_armory:trims/color_palettes/acryl_darker"
+      }
+    }
+  ]
+}

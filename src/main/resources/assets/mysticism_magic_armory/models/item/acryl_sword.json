@@ -1,0 +1,16 @@
+{
+  "loader": "neoforge:item_layers",
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "mysticism_magic_armory:item/acryl_sword",
+    "layer1": "mysticism_magic_armory:item/acryl_sword_handle"
+  },
+  "render_types": {
+    "minecraft:translucent": [
+      0
+    ],
+    "minecraft:cutout": [
+      1
+    ]
+  }
+}

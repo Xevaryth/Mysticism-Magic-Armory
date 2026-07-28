@@ -1,0 +1,98 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.141'
+}
+
+version = mod_version
+group = mod_group_id
+
+base {
+    archivesName = mod_id
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+java {
+    withSourcesJar()
+}
+
+neoForge {
+    version = neoforge_version
+
+    runs {
+        client {
+            client()
+        }
+
+        server {
+            server()
+            programArgument '--nogui'
+        }
+
+        data {
+            data()
+            programArguments.addAll '--mod', mod_id,
+                '--all',
+                '--output', file('src/generated/resources/').absolutePath,
+                '--existing', file('src/main/resources/').absolutePath
+        }
+    }
+
+    mods {
+        mysticism_magic_armory {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+sourceSets.main.resources {
+    srcDir 'src/generated/resources'
+}
+
+dependencies {
+    // settings.gradle substitutes this coordinate with the current GitHub
+    // checkout of Xevaryth/Mysticism.
+    implementation "com.xevaryth.mysticism:mysticism:${mysticism_api_version}"
+}
+
+processResources {
+    def replaceProperties = [
+        minecraft_version      : minecraft_version,
+        minecraft_version_range: minecraft_version_range,
+        neoforge_version       : neoforge_version,
+        neoforge_version_range : neoforge_version_range,
+        loader_version_range   : loader_version_range,
+        mod_id                 : mod_id,
+        mod_name               : mod_name,
+        mod_license            : mod_license,
+        mod_version            : mod_version,
+        mod_authors            : mod_authors,
+        mod_description        : mod_description
+    ]
+
+    inputs.properties replaceProperties
+
+    filesMatching(['META-INF/neoforge.mods.toml', 'pack.mcmeta']) {
+        expand replaceProperties
+    }
+}
+
+tasks.register('mysticismStatus') {
+    group = 'mysticism'
+    description = 'Prints the Mysticism commit used by this workspace.'
+
+    doLast {
+        def checkout = file('external/Mysticism')
+        def process = new ProcessBuilder('git', 'rev-parse', 'HEAD')
+            .directory(checkout)
+            .redirectErrorStream(true)
+            .start()
+        def output = process.inputStream.getText('UTF-8').trim()
+
+        if (process.waitFor() != 0) {
+            throw new GradleException(output)
+        }
+
+        println "Mysticism commit: ${output}"
+    }
+}

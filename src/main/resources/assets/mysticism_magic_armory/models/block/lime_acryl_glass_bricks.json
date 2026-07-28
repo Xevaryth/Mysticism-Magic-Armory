@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "mysticism_magic_armory:block/lime_acryl_glass_bricks"
+  },
+  "render_type": "minecraft:translucent"
+}

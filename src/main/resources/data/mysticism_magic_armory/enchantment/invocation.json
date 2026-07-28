@@ -1,0 +1,22 @@
+{
+  "anvil_cost": 8,
+  "description": {
+    "translate": "enchantment.mysticism_magic_armory.invocation"
+  },
+  "effects": {},
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 28,
+    "per_level_above_first": 0
+  },
+  "primary_items": "#mysticism_magic_armory:tomes",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#mysticism_magic_armory:tomes",
+  "weight": 2
+}

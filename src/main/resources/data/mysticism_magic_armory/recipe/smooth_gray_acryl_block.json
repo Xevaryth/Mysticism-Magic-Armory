@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "building",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "mysticism_magic_armory:gray_acryl_block"
+  },
+  "result": {
+    "id": "mysticism_magic_armory:smooth_gray_acryl_block"
+  },
+  "group": "smooth_acryl_blocks"
+}

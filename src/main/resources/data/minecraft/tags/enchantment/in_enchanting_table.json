@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "mysticism_magic_armory:mana_reservoir",
+    "mysticism_magic_armory:magic_protection",
+    "mysticism_magic_armory:mana_flow",
+    "mysticism_magic_armory:arcane_reach",
+    "mysticism_magic_armory:arcane_impact",
+    "mysticism_magic_armory:invocation"
+  ]
+}

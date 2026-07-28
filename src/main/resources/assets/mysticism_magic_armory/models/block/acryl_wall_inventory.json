@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "mysticism_magic_armory:block/acryl_block"
+  }
+}

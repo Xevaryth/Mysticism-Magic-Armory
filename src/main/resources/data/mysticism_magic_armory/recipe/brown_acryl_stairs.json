@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "mysticism_magic_armory:brown_acryl_block"
+    }
+  },
+  "result": {
+    "id": "mysticism_magic_armory:brown_acryl_stairs",
+    "count": 4
+  },
+  "group": "acryl_stairs"
+}

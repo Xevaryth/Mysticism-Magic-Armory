@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "XXX",
+    "XDX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "mysticism_magic_armory:acryl_block"
+    },
+    "D": {
+      "item": "minecraft:purple_dye"
+    }
+  },
+  "result": {
+    "id": "mysticism_magic_armory:purple_acryl_block",
+    "count": 8
+  },
+  "group": "acryl_blocks"
+}

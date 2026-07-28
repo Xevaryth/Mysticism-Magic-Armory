@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "XXX",
+    "XDX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "mysticism_magic_armory:acryl_glass"
+    },
+    "D": {
+      "item": "minecraft:light_blue_dye"
+    }
+  },
+  "result": {
+    "id": "mysticism_magic_armory:light_blue_acryl_glass",
+    "count": 8
+  },
+  "group": "acryl_glass"
+}

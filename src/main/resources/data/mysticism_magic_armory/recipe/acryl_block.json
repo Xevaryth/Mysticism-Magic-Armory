@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    " Q ",
+    "QAQ",
+    " Q "
+  ],
+  "key": {
+    "Q": {
+      "item": "minecraft:quartz_block"
+    },
+    "A": {
+      "item": "mysticism_magic_armory:acryl"
+    }
+  },
+  "result": {
+    "id": "mysticism_magic_armory:acryl_block",
+    "count": 8
+  },
+  "group": "acryl_blocks"
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "A A",
+    "A A"
+  ],
+  "key": {
+    "A": {
+      "item": "mysticism_magic_armory:acryl"
+    }
+  },
+  "result": {
+    "id": "mysticism_magic_armory:acryl_boots",
+    "count": 1
+  }
+}

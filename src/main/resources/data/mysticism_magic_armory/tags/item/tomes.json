@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "mysticism_magic_armory:leather_tome",
+    "mysticism_magic_armory:amethyst_tome",
+    "mysticism_magic_armory:diamond_tome",
+    "mysticism_magic_armory:emerald_tome",
+    "mysticism_magic_armory:netherite_tome",
+    "mysticism_magic_armory:acryl_tome"
+  ]
+}

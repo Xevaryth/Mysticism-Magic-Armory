@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "mysticism_magic_armory:pink_acryl_glass"
+  },
+  "result": {
+    "id": "mysticism_magic_armory:chiseled_pink_acryl_glass",
+    "count": 1
+  },
+  "group": "chiseled_acryl_glass"
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/template_glass_pane_side",
+  "textures": {
+    "edge": "mysticism_magic_armory:block/cyan_acryl_glass_brick_pane_top",
+    "pane": "mysticism_magic_armory:block/cyan_acryl_glass_bricks"
+  },
+  "render_type": "minecraft:translucent"
+}

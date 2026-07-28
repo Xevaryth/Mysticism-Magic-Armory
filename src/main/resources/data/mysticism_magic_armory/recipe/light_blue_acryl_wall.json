@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "BBB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "mysticism_magic_armory:light_blue_acryl_block"
+    }
+  },
+  "result": {
+    "id": "mysticism_magic_armory:light_blue_acryl_wall",
+    "count": 6
+  },
+  "group": "acryl_walls"
+}

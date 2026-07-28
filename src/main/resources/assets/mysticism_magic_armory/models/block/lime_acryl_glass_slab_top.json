@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "mysticism_magic_armory:block/lime_acryl_glass_block",
+    "top": "mysticism_magic_armory:block/lime_acryl_glass_block",
+    "side": "mysticism_magic_armory:block/lime_acryl_glass_block"
+  },
+  "render_type": "minecraft:translucent"
+}

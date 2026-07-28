@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "BB",
+    "BB"
+  ],
+  "key": {
+    "B": {
+      "item": "mysticism_magic_armory:white_acryl_glass"
+    }
+  },
+  "result": {
+    "id": "mysticism_magic_armory:white_acryl_glass_bricks",
+    "count": 4
+  },
+  "group": "acryl_glass_bricks"
+}

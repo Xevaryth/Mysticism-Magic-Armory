@@ -1,0 +1,23 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "enchantment.mysticism_magic_armory.arcane_impact"
+  },
+  "effects": {},
+  "exclusive_set": "#mysticism_magic_armory:exclusive_set/staff_path",
+  "max_cost": {
+    "base": 55,
+    "per_level_above_first": 10
+  },
+  "max_level": 5,
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 10
+  },
+  "primary_items": "#mysticism_magic_armory:staffs",
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "#mysticism_magic_armory:staffs",
+  "weight": 8
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "BBB",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "mysticism_magic_armory:chiseled_light_gray_acryl_glass"
+    }
+  },
+  "result": {
+    "id": "mysticism_magic_armory:chiseled_light_gray_acryl_glass_pane",
+    "count": 16
+  },
+  "group": "chiseled_acryl_glass_panes"
+}

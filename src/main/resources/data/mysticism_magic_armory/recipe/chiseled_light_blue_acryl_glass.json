@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "S",
+    "S"
+  ],
+  "key": {
+    "S": {
+      "item": "mysticism_magic_armory:light_blue_acryl_glass_slab"
+    }
+  },
+  "result": {
+    "id": "mysticism_magic_armory:chiseled_light_blue_acryl_glass",
+    "count": 1
+  },
+  "group": "chiseled_acryl_glass"
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "mysticism_magic_armory:block/pink_acryl_pillar"
+    },
+    "axis=x": {
+      "model": "mysticism_magic_armory:block/pink_acryl_pillar",
+      "x": 90,
+      "y": 90
+    },
+    "axis=z": {
+      "model": "mysticism_magic_armory:block/pink_acryl_pillar",
+      "x": 90
+    }
+  }
+}

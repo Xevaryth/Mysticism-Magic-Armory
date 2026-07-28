@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "mysticism_magic_armory:light_gray_acryl_glass"
+  },
+  "result": {
+    "id": "mysticism_magic_armory:light_gray_acryl_glass_stairs",
+    "count": 1
+  },
+  "group": "acryl_glass_stairs"
+}

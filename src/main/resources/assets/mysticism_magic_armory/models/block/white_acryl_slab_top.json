@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "mysticism_magic_armory:block/white_acryl_block",
+    "top": "mysticism_magic_armory:block/white_acryl_block",
+    "side": "mysticism_magic_armory:block/white_acryl_block"
+  }
+}

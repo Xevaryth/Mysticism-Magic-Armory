@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "mysticism_magic_armory:gray_acryl_block"
+  },
+  "result": {
+    "id": "mysticism_magic_armory:chiseled_gray_acryl_block",
+    "count": 1
+  },
+  "group": "chiseled_acryl_blocks"
+}

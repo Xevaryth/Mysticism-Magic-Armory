@@ -1,0 +1,12 @@
+{
+  "asset_name": "magic_armory_acryl",
+  "description": {
+    "color": "#E889C9",
+    "translate": "trim_material.mysticism_magic_armory.acryl"
+  },
+  "ingredient": "mysticism_magic_armory:acryl",
+  "item_model_index": 1.1,
+  "override_armor_materials": {
+    "mysticism_magic_armory:acryl": "magic_armory_acryl_darker"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    " G ",
+    "GAG",
+    " G "
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "A": {
+      "item": "mysticism_magic_armory:acryl"
+    }
+  },
+  "result": {
+    "id": "mysticism_magic_armory:acryl_glass",
+    "count": 8
+  },
+  "group": "acryl_glass"
+}

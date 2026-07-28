@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "mysticism_magic_armory:block/red_acryl_glass_chiseled",
+    "end": "mysticism_magic_armory:block/red_acryl_glass_chiseled_top"
+  },
+  "render_type": "minecraft:translucent"
+}

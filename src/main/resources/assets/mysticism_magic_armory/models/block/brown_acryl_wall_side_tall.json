@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side_tall",
+  "textures": {
+    "wall": "mysticism_magic_armory:block/brown_acryl_block"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "mysticism_magic_armory:block/light_blue_acryl_block",
+    "top": "mysticism_magic_armory:block/light_blue_acryl_block",
+    "side": "mysticism_magic_armory:block/light_blue_acryl_block"
+  }
+}

@@ -1,0 +1,106 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+        maven { url = 'https://maven.neoforged.net/releases' }
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
+    repositories {
+        mavenCentral()
+        maven { url = 'https://maven.neoforged.net/releases' }
+    }
+}
+
+rootProject.name = 'Mysticism-Magic-Armory'
+
+// Mysticism is not copied into this project. Gradle keeps a local checkout of
+// the current GitHub source and substitutes it for the normal module dependency.
+def mysticismRepository = 'https://github.com/Xevaryth/Mysticism.git'
+def mysticismCheckout = file('external/Mysticism')
+def mysticismRef = providers.gradleProperty('mysticism_ref')
+    .orElse('main')
+    .get()
+def updateMysticism = providers.gradleProperty('mysticism_auto_update')
+    .orElse('true')
+    .get()
+    .toBoolean()
+
+def runGit = { List<String> arguments, File workingDirectory ->
+    def command = ['git'] + arguments
+    def process
+
+    try {
+        process = new ProcessBuilder(command)
+            .directory(workingDirectory)
+            .redirectErrorStream(true)
+            .start()
+    } catch (IOException exception) {
+        throw new GradleException(
+            'Git is required to download Mysticism. Install Git and restart the Gradle sync.',
+            exception
+        )
+    }
+
+    def output = process.inputStream.getText('UTF-8')
+    def result = process.waitFor()
+
+    if (result != 0) {
+        throw new GradleException(
+            "Command failed (${command.join(' ')}):\n${output}"
+        )
+    }
+
+    return output.trim()
+}
+
+def mysticismBuildFile = new File(mysticismCheckout, 'build.gradle')
+def hasCachedMysticism = new File(mysticismCheckout, '.git').isDirectory() &&
+    mysticismBuildFile.isFile()
+
+if (!new File(mysticismCheckout, '.git').isDirectory()) {
+    mysticismCheckout.parentFile.mkdirs()
+    runGit(
+        ['clone', '--filter=blob:none', '--no-checkout', mysticismRepository,
+         mysticismCheckout.absolutePath],
+        rootDir
+    )
+}
+
+if (updateMysticism || !hasCachedMysticism) {
+    try {
+        runGit(['fetch', '--depth', '1', 'origin', mysticismRef], mysticismCheckout)
+        runGit(['checkout', '--detach', '--force', 'FETCH_HEAD'], mysticismCheckout)
+    } catch (GradleException exception) {
+        if (!mysticismBuildFile.isFile()) {
+            throw exception
+        }
+
+        logger.warn(
+            'Could not refresh Mysticism from GitHub; using the cached checkout.\n{}',
+            exception.message
+        )
+    }
+}
+
+// Mysticism currently contains the creator's absolute Windows JDK path.
+// Removing it from this disposable checkout lets both projects use this
+// build's Java 21 toolchain without altering the GitHub repository.
+def mysticismProperties = new File(mysticismCheckout, 'gradle.properties')
+if (mysticismProperties.isFile()) {
+    def sanitizedLines = mysticismProperties.readLines('UTF-8').findAll { line ->
+        !line.trim().startsWith('org.gradle.java.home=')
+    }
+    mysticismProperties.setText(
+        sanitizedLines.join(System.lineSeparator()) + System.lineSeparator(),
+        'UTF-8'
+    )
+}
+
+includeBuild(mysticismCheckout) {
+    dependencySubstitution {
+        substitute module('com.xevaryth.mysticism:mysticism') using project(':')
+    }
+}

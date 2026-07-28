@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mysticism_magic_armory:block/red_acryl_glass_slab"
+    },
+    "type=top": {
+      "model": "mysticism_magic_armory:block/red_acryl_glass_slab_top"
+    },
+    "type=double": {
+      "model": "mysticism_magic_armory:block/red_acryl_glass"
+    }
+  }
+}

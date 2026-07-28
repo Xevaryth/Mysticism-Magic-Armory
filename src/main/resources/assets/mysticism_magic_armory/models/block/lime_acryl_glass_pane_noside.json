@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_glass_pane_noside",
+  "textures": {
+    "pane": "mysticism_magic_armory:block/lime_acryl_glass_block"
+  },
+  "render_type": "minecraft:translucent"
+}

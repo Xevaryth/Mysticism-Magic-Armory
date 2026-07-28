@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld_rod",
+  "textures": {
+    "layer0": "mysticism_magic_armory:item/netherite_staff"
+  }
+}

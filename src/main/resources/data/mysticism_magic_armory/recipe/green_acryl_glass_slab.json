@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "mysticism_magic_armory:green_acryl_glass"
+    }
+  },
+  "result": {
+    "id": "mysticism_magic_armory:green_acryl_glass_slab",
+    "count": 6
+  },
+  "group": "acryl_glass_slabs"
+}

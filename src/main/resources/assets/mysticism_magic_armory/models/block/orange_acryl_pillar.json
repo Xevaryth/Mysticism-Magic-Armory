@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "mysticism_magic_armory:block/orange_acryl_pillar",
+    "end": "mysticism_magic_armory:block/orange_acryl_pillar_top"
+  }
+}

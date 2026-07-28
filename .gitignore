@@ -1,0 +1,21 @@
+﻿# Gradle and build output
+.gradle/
+build/
+run/
+
+# Automatically downloaded Mysticism source
+external/Mysticism/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
